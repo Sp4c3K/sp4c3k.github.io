@@ -42,11 +42,12 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(15, 23, 42, 0.95);
+    background: rgba(0, 0, 0, 0.98);
     backdrop-filter: blur(10px);
     padding: 1rem 0;
     z-index: 1000;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 20px rgba(220, 38, 38, 0.5);
+    border-bottom: 2px solid var(--primary-color);
 }
 
 .navbar .container {
@@ -62,6 +63,20 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 2px;
+}
+
+.terminal-header {
+    background: var(--bg-secondary);
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 2rem;
+    font-family: 'Courier New', monospace;
+    color: var(--primary-color);
+    display: inline-block;
+    box-shadow: 0 0 20px rgba(220, 38, 38, 0.3);
 }
 
 .nav-links {
@@ -548,11 +563,23 @@ section {
 
 .footer p {
     color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.footer-quote {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
     margin-bottom: 1rem;
 }
 
 .footer i.fa-heart {
     color: var(--accent-color);
+}
+
+.footer i.fa-terminal,
+.footer i.fa-coffee {
+    color: var(--primary-color);
 }
 
 .footer-links {
